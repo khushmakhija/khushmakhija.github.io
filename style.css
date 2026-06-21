@@ -78,6 +78,30 @@ a {
   color: var(--primary);
 }
 
+.language-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 750;
+}
+
+.lang-button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+
+.lang-button:hover,
+.lang-button:focus-visible,
+.lang-button.is-active {
+  color: var(--primary);
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
@@ -479,10 +503,16 @@ li + li {
 
   .nav {
     min-height: 64px;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 1;
   }
 
   .nav-toggle {
     display: block;
+    order: 3;
   }
 
   .nav-links {
@@ -503,6 +533,10 @@ li + li {
 
   .nav-links.is-open {
     display: flex;
+  }
+
+  .language-switch {
+    order: 2;
   }
 
   .nav-links a {

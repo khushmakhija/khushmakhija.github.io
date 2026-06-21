@@ -12,18 +12,23 @@
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="#hero" aria-label="Khush Makhija home">Khush Makhija</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only" data-i18n="nav.toggle">Toggle navigation</span>
         <span></span>
         <span></span>
         <span></span>
       </button>
       <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="language-switch" aria-label="Choose language">
+        <button class="lang-button" type="button" data-lang="de" aria-pressed="false">DE</button>
+        <span aria-hidden="true">|</span>
+        <button class="lang-button is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
       </div>
     </nav>
   </header>
@@ -32,30 +37,30 @@
     <section class="hero" id="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Available for Werkstudent, internship, and software engineering roles</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Available for Werkstudent, internship, and software engineering roles</p>
           <h1>Khush Makhija</h1>
-          <p class="headline">Computer Science Student at TU Darmstadt</p>
-          <p class="subheadline">Software Engineering · Full-Stack Development · Mobile Applications · Automation</p>
+          <p class="headline" data-i18n="hero.headline">Computer Science Student at TU Darmstadt</p>
+          <p class="subheadline" data-i18n="hero.subheadline">Software Engineering · Full-Stack Development · Mobile Applications · Automation</p>
           <div class="hero-actions">
             <!-- Change the CV file name below after adding your PDF to the assets folder. -->
-            <a class="button primary" href="assets/Khush_Makhija_CV.pdf" download>Download CV</a>
-            <a class="button secondary" href="#contact">Contact Me</a>
+            <a class="button primary" href="assets/Khush_Makhija_CV.pdf" download data-i18n="hero.download">Download CV</a>
+            <a class="button secondary" href="#contact" data-i18n="hero.contact">Contact Me</a>
           </div>
         </div>
         <aside class="hero-card" aria-label="Profile summary">
           <div class="avatar" aria-hidden="true">KM</div>
           <dl>
             <div>
-              <dt>Location</dt>
-              <dd>Darmstadt, Germany</dd>
+              <dt data-i18n="hero.locationLabel">Location</dt>
+              <dd data-i18n="hero.location">Darmstadt, Germany</dd>
             </div>
             <div>
-              <dt>University</dt>
+              <dt data-i18n="hero.universityLabel">University</dt>
               <dd>TU Darmstadt</dd>
             </div>
             <div>
-              <dt>Focus</dt>
-              <dd>Software Engineering, IT Security, OOP</dd>
+              <dt data-i18n="hero.focusLabel">Focus</dt>
+              <dd data-i18n="hero.focus">Software Engineering, IT Security, OOP</dd>
             </div>
           </dl>
         </aside>
@@ -65,40 +70,40 @@
     <section class="section" id="about">
       <div class="container section-grid">
         <div>
-          <p class="section-kicker">About Me</p>
-          <h2>Practical software work with a strong academic foundation.</h2>
+          <p class="section-kicker" data-i18n="about.kicker">About Me</p>
+          <h2 data-i18n="about.title">Practical software work with a strong academic foundation.</h2>
         </div>
-        <p class="lead">I am a Computer Science student at Technische Universität Darmstadt with practical experience in full-stack development, software engineering, mobile applications, and student project coordination. I enjoy building useful software, learning new technologies, and applying theoretical knowledge in practical projects.</p>
+        <p class="lead" data-i18n="about.text">I am a Computer Science student at Technische Universität Darmstadt with practical experience in full-stack development, software engineering, mobile applications, and student project coordination. I enjoy building useful software, learning new technologies, and applying theoretical knowledge in practical projects.</p>
       </div>
     </section>
 
     <section class="section subtle" id="education">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Education</p>
-          <h2>Academic Background</h2>
+          <p class="section-kicker" data-i18n="education.kicker">Education</p>
+          <h2 data-i18n="education.title">Academic Background</h2>
         </div>
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-date">October 2022 – present</div>
+            <div class="timeline-date" data-i18n="education.tuDate">October 2022 – present</div>
             <div>
               <h3>B.Sc. Informatik</h3>
               <p>Technische Universität Darmstadt</p>
-              <p class="muted">Focus areas: Object-Oriented Programming, IT Security, Software Engineering</p>
+              <p class="muted" data-i18n="education.tuFocus">Focus areas: Object-Oriented Programming, IT Security, Software Engineering</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-date">September 2021 – June 2022</div>
+            <div class="timeline-date" data-i18n="education.fspDate">September 2021 – June 2022</div>
             <div>
               <h3>Feststellungsprüfung</h3>
               <p>Studienkolleg Magdeburg</p>
-              <p class="muted">T-Kurs, grade 2.1</p>
+              <p class="muted" data-i18n="education.fspDetails">T-Kurs, grade 2.1</p>
             </div>
           </article>
           <article class="timeline-item">
-            <div class="timeline-date">September 2020 – August 2021</div>
+            <div class="timeline-date" data-i18n="education.goetheDate">September 2020 – August 2021</div>
             <div>
-              <h3>German Course A1–B2</h3>
+              <h3 data-i18n="education.goetheTitle">German Course A1–B2</h3>
               <p>Goethe Institute Pune</p>
             </div>
           </article>
@@ -109,40 +114,40 @@
     <section class="section" id="experience">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Experience</p>
-          <h2>Teaching, mentoring, and project coordination</h2>
+          <p class="section-kicker" data-i18n="experience.kicker">Experience</p>
+          <h2 data-i18n="experience.title">Teaching, mentoring, and project coordination</h2>
         </div>
         <div class="card-grid">
           <article class="card">
-            <p class="card-meta">October 2025 – March 2026</p>
-            <h3>Tutor Software Engineering</h3>
+            <p class="card-meta" data-i18n="experience.date">October 2025 – March 2026</p>
+            <h3 data-i18n="experience.tutorTitle">Tutor Software Engineering</h3>
             <p class="card-org">Technische Universität Darmstadt</p>
             <ul>
-              <li>Led weekly tutorials for software engineering topics</li>
-              <li>Supported students with exercises and software engineering concepts</li>
-              <li>Helped prepare and correct practice-oriented assignments</li>
-              <li>Adapted explanations based on student feedback</li>
+              <li data-i18n="experience.tutor1">Led weekly tutorials for software engineering topics</li>
+              <li data-i18n="experience.tutor2">Supported students with exercises and software engineering concepts</li>
+              <li data-i18n="experience.tutor3">Helped prepare and correct practice-oriented assignments</li>
+              <li data-i18n="experience.tutor4">Adapted explanations based on student feedback</li>
             </ul>
           </article>
           <article class="card">
-            <p class="card-meta">October 2025 – March 2026</p>
-            <h3>Project Team Coordinator / Teamleiter</h3>
+            <p class="card-meta" data-i18n="experience.date">October 2025 – March 2026</p>
+            <h3 data-i18n="experience.coordinatorTitle">Project Team Coordinator / Teamleiter</h3>
             <p class="card-org">Technische Universität Darmstadt</p>
             <ul>
-              <li>Coordinated three student software project teams</li>
-              <li>Supported planning, communication, and task distribution</li>
-              <li>Helped resolve organizational issues and improve team workflows</li>
-              <li>Acted as interface between teams, organization, and stakeholders</li>
+              <li data-i18n="experience.coord1">Coordinated three student software project teams</li>
+              <li data-i18n="experience.coord2">Supported planning, communication, and task distribution</li>
+              <li data-i18n="experience.coord3">Helped resolve organizational issues and improve team workflows</li>
+              <li data-i18n="experience.coord4">Acted as interface between teams, organization, and stakeholders</li>
             </ul>
           </article>
           <article class="card">
-            <p class="card-meta">October 2025 – March 2026</p>
-            <h3>Mentor</h3>
+            <p class="card-meta" data-i18n="experience.date">October 2025 – March 2026</p>
+            <h3 data-i18n="experience.mentorTitle">Mentor</h3>
             <p class="card-org">Technische Universität Darmstadt</p>
             <ul>
-              <li>Supported first-semester students with study organization and learning plans</li>
-              <li>Helped with time management, exam preparation, and university life</li>
-              <li>Provided regular guidance and feedback</li>
+              <li data-i18n="experience.mentor1">Supported first-semester students with study organization and learning plans</li>
+              <li data-i18n="experience.mentor2">Helped with time management, exam preparation, and university life</li>
+              <li data-i18n="experience.mentor3">Provided regular guidance and feedback</li>
             </ul>
           </article>
         </div>
@@ -152,29 +157,29 @@
     <section class="section subtle" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Projects</p>
-          <h2>Selected Technical Work</h2>
+          <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
+          <h2 data-i18n="projects.title">Selected Technical Work</h2>
         </div>
         <div class="project-grid">
           <article class="card project-card">
-            <p class="card-meta">Since May 2026</p>
+            <p class="card-meta" data-i18n="projects.swissDate">Since May 2026</p>
             <h3>Swiss Trip Planner App</h3>
             <ul>
-              <li>Mobile travel planning app built with Flutter and Dart</li>
-              <li>Includes itinerary planning, accommodation details, transport information, saved places, and shared expense tracking</li>
-              <li>Integrated Firebase, Cloud Firestore, and Firebase Auth for real-time synchronization</li>
-              <li>Built and deployed on iOS devices using Xcode, Flutter CLI, and Firebase configuration</li>
+              <li data-i18n="projects.swiss1">Mobile travel planning app built with Flutter and Dart</li>
+              <li data-i18n="projects.swiss2">Includes itinerary planning, accommodation details, transport information, saved places, and shared expense tracking</li>
+              <li data-i18n="projects.swiss3">Integrated Firebase, Cloud Firestore, and Firebase Auth for real-time synchronization</li>
+              <li data-i18n="projects.swiss4">Built and deployed on iOS devices using Xcode, Flutter CLI, and Firebase configuration</li>
             </ul>
             <p class="tech-stack">Flutter · Dart · Firebase · Cloud Firestore · Xcode</p>
           </article>
           <article class="card project-card">
-            <p class="card-meta">Since March 2026</p>
-            <h3>Voice-Controlled Windows Automation Assistant</h3>
+            <p class="card-meta" data-i18n="projects.voiceDate">Since March 2026</p>
+            <h3 data-i18n="projects.voiceTitle">Voice-Controlled Windows Automation Assistant</h3>
             <ul>
-              <li>Modular offline voice assistant prototype for Windows 11</li>
-              <li>Uses Whisper-based speech recognition with push-to-talk activation</li>
-              <li>Supports command parsing and native Windows controls such as media playback, volume control, muting, and safe shutdown</li>
-              <li>Designed as a foundation for future desktop automation and mobile remote control</li>
+              <li data-i18n="projects.voice1">Modular offline voice assistant prototype for Windows 11</li>
+              <li data-i18n="projects.voice2">Uses Whisper-based speech recognition with push-to-talk activation</li>
+              <li data-i18n="projects.voice3">Supports command parsing and native Windows controls such as media playback, volume control, muting, and safe shutdown</li>
+              <li data-i18n="projects.voice4">Designed as a foundation for future desktop automation and mobile remote control</li>
             </ul>
             <p class="tech-stack">Python · Whisper · pycaw · comtypes · keyboard</p>
           </article>
@@ -185,12 +190,12 @@
     <section class="section" id="skills">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2>Technical Toolkit</h2>
+          <p class="section-kicker" data-i18n="skills.kicker">Skills</p>
+          <h2 data-i18n="skills.title">Technical Toolkit</h2>
         </div>
         <div class="skills-grid">
           <article class="skill-group">
-            <h3>Programming Languages</h3>
+            <h3 data-i18n="skills.languages">Programming Languages</h3>
             <div class="tags">
               <span>Java</span>
               <span>C++</span>
@@ -200,7 +205,7 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>Web Development</h3>
+            <h3 data-i18n="skills.web">Web Development</h3>
             <div class="tags">
               <span>Vue.js</span>
               <span>Django</span>
@@ -210,7 +215,7 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>Mobile and Cloud</h3>
+            <h3 data-i18n="skills.mobile">Mobile and Cloud</h3>
             <div class="tags">
               <span>Flutter</span>
               <span>Firebase</span>
@@ -218,7 +223,7 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>Tools</h3>
+            <h3 data-i18n="skills.tools">Tools</h3>
             <div class="tags">
               <span>Git</span>
               <span>GitLab</span>
@@ -230,7 +235,7 @@
             </div>
           </article>
           <article class="skill-group">
-            <h3>Operating Systems</h3>
+            <h3 data-i18n="skills.os">Operating Systems</h3>
             <div class="tags">
               <span>Linux</span>
               <span>macOS</span>
@@ -244,14 +249,14 @@
     <section class="section subtle" id="languages">
       <div class="container">
         <div class="section-heading">
-          <p class="section-kicker">Languages</p>
-          <h2>Communication</h2>
+          <p class="section-kicker" data-i18n="languages.kicker">Languages</p>
+          <h2 data-i18n="languages.title">Communication</h2>
         </div>
         <div class="language-list">
-          <div><strong>Hindi</strong><span>Native</span></div>
-          <div><strong>English</strong><span>Fluent</span></div>
-          <div><strong>German</strong><span>Fluent</span></div>
-          <div><strong>Dutch</strong><span>Basic knowledge A1</span></div>
+          <div><strong>Hindi</strong><span data-i18n="languages.hindi">Native</span></div>
+          <div><strong>English</strong><span data-i18n="languages.english">Fluent</span></div>
+          <div><strong>German</strong><span data-i18n="languages.german">Fluent</span></div>
+          <div><strong>Dutch</strong><span data-i18n="languages.dutch">Basic knowledge A1</span></div>
         </div>
       </div>
     </section>
@@ -259,18 +264,18 @@
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Let’s connect.</h2>
-          <p class="lead">I am open to Werkstudent, internship, and software engineering opportunities where I can contribute, learn, and build useful software.</p>
+          <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+          <h2 data-i18n="contact.title">Let’s connect.</h2>
+          <p class="lead" data-i18n="contact.text">I am open to Werkstudent, internship, and software engineering opportunities where I can contribute, learn, and build useful software.</p>
         </div>
         <div class="contact-card">
           <!-- Change the email address below if your preferred contact email changes. -->
           <a href="mailto:khushmak@outlook.com">khushmak@outlook.com</a>
-          <!-- Replace # with your GitHub profile URL. -->
-          <a href="#" target="_blank" rel="noopener">GitHub profile</a>
+          <!-- Replace this GitHub URL if your profile changes. -->
+          <a href="https://github.com/khushmakhija" target="_blank" rel="noopener" data-i18n="contact.github">GitHub profile</a>
           <!-- Replace # with your LinkedIn profile URL. -->
-          <a href="#" target="_blank" rel="noopener">LinkedIn profile</a>
-          <span>Darmstadt, Germany</span>
+          <a href="#" target="_blank" rel="noopener" data-i18n="contact.linkedin">LinkedIn profile</a>
+          <span data-i18n="contact.location">Darmstadt, Germany</span>
         </div>
       </div>
     </section>
@@ -283,8 +288,189 @@
   </footer>
 
   <script>
+    const translations = {
+      de: {
+        "nav.toggle": "Navigation umschalten",
+        "nav.about": "Über mich",
+        "nav.education": "Ausbildung",
+        "nav.experience": "Erfahrung",
+        "nav.projects": "Projekte",
+        "nav.skills": "Skills",
+        "nav.contact": "Kontakt",
+        "hero.eyebrow": "Offen für Werkstudentenstellen, Praktika und Software-Engineering-Rollen",
+        "hero.headline": "Informatikstudent an der TU Darmstadt",
+        "hero.subheadline": "Software Engineering · Full-Stack-Entwicklung · Mobile Apps · Automatisierung",
+        "hero.download": "Lebenslauf herunterladen",
+        "hero.contact": "Kontakt aufnehmen",
+        "hero.locationLabel": "Standort",
+        "hero.location": "Darmstadt, Deutschland",
+        "hero.universityLabel": "Universität",
+        "hero.focusLabel": "Schwerpunkte",
+        "hero.focus": "Software Engineering, IT-Sicherheit, OOP",
+        "about.kicker": "Über mich",
+        "about.title": "Praxisnahe Softwareentwicklung mit fundierter Informatik-Basis.",
+        "about.text": "Ich studiere Informatik an der Technischen Universität Darmstadt und bringe praktische Erfahrung in Software Engineering, Full-Stack-Entwicklung, mobilen Anwendungen und studentischer Projektkoordination mit. Besonders motiviert mich, nützliche Software zu bauen, neue Technologien strukturiert zu lernen und theoretisches Wissen in realen Projekten anzuwenden.",
+        "education.kicker": "Ausbildung",
+        "education.title": "Akademischer Werdegang",
+        "education.tuDate": "Oktober 2022 – heute",
+        "education.tuFocus": "Schwerpunkte: Objektorientierte Programmierung, IT-Sicherheit, Software Engineering",
+        "education.fspDate": "September 2021 – Juni 2022",
+        "education.fspDetails": "T-Kurs, Note 2,1",
+        "education.goetheDate": "September 2020 – August 2021",
+        "education.goetheTitle": "Deutschkurse A1–B2",
+        "experience.kicker": "Erfahrung",
+        "experience.title": "Lehre, Mentoring und Projektkoordination",
+        "experience.date": "Oktober 2025 – März 2026",
+        "experience.tutorTitle": "Tutor Software Engineering",
+        "experience.tutor1": "Wöchentliche Tutorien zu Software-Engineering-Themen geleitet",
+        "experience.tutor2": "Studierende bei Übungen und Software-Engineering-Konzepten unterstützt",
+        "experience.tutor3": "Praxisorientierte Aufgaben mit vorbereitet und korrigiert",
+        "experience.tutor4": "Erklärungen anhand von studentischem Feedback angepasst",
+        "experience.coordinatorTitle": "Projektteam-Koordinator / Teamleiter",
+        "experience.coord1": "Drei studentische Software-Projektteams koordiniert",
+        "experience.coord2": "Planung, Kommunikation und Aufgabenverteilung unterstützt",
+        "experience.coord3": "Organisatorische Probleme gelöst und Teamabläufe verbessert",
+        "experience.coord4": "Als Schnittstelle zwischen Teams, Organisation und Stakeholdern agiert",
+        "experience.mentorTitle": "Mentor",
+        "experience.mentor1": "Erstsemester bei Studienorganisation und Lernplanung unterstützt",
+        "experience.mentor2": "Bei Zeitmanagement, Prüfungsvorbereitung und Universitätsalltag geholfen",
+        "experience.mentor3": "Regelmäßige Orientierung und Feedback gegeben",
+        "projects.kicker": "Projekte",
+        "projects.title": "Ausgewählte technische Projekte",
+        "projects.swissDate": "Seit Mai 2026",
+        "projects.swiss1": "Mobile Reiseplanungs-App mit Flutter und Dart entwickelt",
+        "projects.swiss2": "Umfasst Reiseplanung, Unterkunftsdaten, Transportinformationen, gespeicherte Orte und geteilte Ausgaben",
+        "projects.swiss3": "Firebase, Cloud Firestore und Firebase Auth für Echtzeit-Synchronisierung integriert",
+        "projects.swiss4": "Build und Deployment auf iOS-Geräten mit Xcode, Flutter CLI und Firebase-Konfiguration umgesetzt",
+        "projects.voiceDate": "Seit März 2026",
+        "projects.voiceTitle": "Sprachgesteuerter Windows-Automatisierungsassistent",
+        "projects.voice1": "Modularer Offline-Sprachassistent als Prototyp für Windows 11",
+        "projects.voice2": "Nutzt Whisper-basierte Spracherkennung mit Push-to-Talk-Aktivierung",
+        "projects.voice3": "Unterstützt Command Parsing und native Windows-Steuerung wie Medienwiedergabe, Lautstärke, Stummschaltung und sicheres Herunterfahren",
+        "projects.voice4": "Als Grundlage für zukünftige Desktop-Automatisierung und mobile Fernsteuerung konzipiert",
+        "skills.kicker": "Skills",
+        "skills.title": "Technisches Profil",
+        "skills.languages": "Programmiersprachen",
+        "skills.web": "Webentwicklung",
+        "skills.mobile": "Mobile & Cloud",
+        "skills.tools": "Tools",
+        "skills.os": "Betriebssysteme",
+        "languages.kicker": "Sprachen",
+        "languages.title": "Kommunikation",
+        "languages.hindi": "Muttersprache",
+        "languages.english": "Fließend",
+        "languages.german": "Fließend",
+        "languages.dutch": "Grundkenntnisse A1",
+        "contact.kicker": "Kontakt",
+        "contact.title": "Lassen Sie uns in Kontakt treten.",
+        "contact.text": "Ich freue mich über Werkstudentenstellen, Praktika und Software-Engineering-Rollen, in denen ich Verantwortung übernehmen, dazulernen und nützliche Software entwickeln kann.",
+        "contact.github": "GitHub-Profil",
+        "contact.linkedin": "LinkedIn-Profil",
+        "contact.location": "Darmstadt, Deutschland"
+      },
+      en: {
+        "nav.toggle": "Toggle navigation",
+        "nav.about": "About",
+        "nav.education": "Education",
+        "nav.experience": "Experience",
+        "nav.projects": "Projects",
+        "nav.skills": "Skills",
+        "nav.contact": "Contact",
+        "hero.eyebrow": "Available for Werkstudent, internship, and software engineering roles",
+        "hero.headline": "Computer Science Student at TU Darmstadt",
+        "hero.subheadline": "Software Engineering · Full-Stack Development · Mobile Applications · Automation",
+        "hero.download": "Download CV",
+        "hero.contact": "Contact Me",
+        "hero.locationLabel": "Location",
+        "hero.location": "Darmstadt, Germany",
+        "hero.universityLabel": "University",
+        "hero.focusLabel": "Focus",
+        "hero.focus": "Software Engineering, IT Security, OOP",
+        "about.kicker": "About Me",
+        "about.title": "Practical software work with a strong academic foundation.",
+        "about.text": "I am a Computer Science student at Technische Universität Darmstadt with practical experience in full-stack development, software engineering, mobile applications, and student project coordination. I enjoy building useful software, learning new technologies, and applying theoretical knowledge in practical projects.",
+        "education.kicker": "Education",
+        "education.title": "Academic Background",
+        "education.tuDate": "October 2022 – present",
+        "education.tuFocus": "Focus areas: Object-Oriented Programming, IT Security, Software Engineering",
+        "education.fspDate": "September 2021 – June 2022",
+        "education.fspDetails": "T-Kurs, grade 2.1",
+        "education.goetheDate": "September 2020 – August 2021",
+        "education.goetheTitle": "German Course A1–B2",
+        "experience.kicker": "Experience",
+        "experience.title": "Teaching, mentoring, and project coordination",
+        "experience.date": "October 2025 – March 2026",
+        "experience.tutorTitle": "Tutor Software Engineering",
+        "experience.tutor1": "Led weekly tutorials for software engineering topics",
+        "experience.tutor2": "Supported students with exercises and software engineering concepts",
+        "experience.tutor3": "Helped prepare and correct practice-oriented assignments",
+        "experience.tutor4": "Adapted explanations based on student feedback",
+        "experience.coordinatorTitle": "Project Team Coordinator / Teamleiter",
+        "experience.coord1": "Coordinated three student software project teams",
+        "experience.coord2": "Supported planning, communication, and task distribution",
+        "experience.coord3": "Helped resolve organizational issues and improve team workflows",
+        "experience.coord4": "Acted as interface between teams, organization, and stakeholders",
+        "experience.mentorTitle": "Mentor",
+        "experience.mentor1": "Supported first-semester students with study organization and learning plans",
+        "experience.mentor2": "Helped with time management, exam preparation, and university life",
+        "experience.mentor3": "Provided regular guidance and feedback",
+        "projects.kicker": "Projects",
+        "projects.title": "Selected Technical Work",
+        "projects.swissDate": "Since May 2026",
+        "projects.swiss1": "Mobile travel planning app built with Flutter and Dart",
+        "projects.swiss2": "Includes itinerary planning, accommodation details, transport information, saved places, and shared expense tracking",
+        "projects.swiss3": "Integrated Firebase, Cloud Firestore, and Firebase Auth for real-time synchronization",
+        "projects.swiss4": "Built and deployed on iOS devices using Xcode, Flutter CLI, and Firebase configuration",
+        "projects.voiceDate": "Since March 2026",
+        "projects.voiceTitle": "Voice-Controlled Windows Automation Assistant",
+        "projects.voice1": "Modular offline voice assistant prototype for Windows 11",
+        "projects.voice2": "Uses Whisper-based speech recognition with push-to-talk activation",
+        "projects.voice3": "Supports command parsing and native Windows controls such as media playback, volume control, muting, and safe shutdown",
+        "projects.voice4": "Designed as a foundation for future desktop automation and mobile remote control",
+        "skills.kicker": "Skills",
+        "skills.title": "Technical Toolkit",
+        "skills.languages": "Programming Languages",
+        "skills.web": "Web Development",
+        "skills.mobile": "Mobile and Cloud",
+        "skills.tools": "Tools",
+        "skills.os": "Operating Systems",
+        "languages.kicker": "Languages",
+        "languages.title": "Communication",
+        "languages.hindi": "Native",
+        "languages.english": "Fluent",
+        "languages.german": "Fluent",
+        "languages.dutch": "Basic knowledge A1",
+        "contact.kicker": "Contact",
+        "contact.title": "Let’s connect.",
+        "contact.text": "I am open to Werkstudent, internship, and software engineering opportunities where I can contribute, learn, and build useful software.",
+        "contact.github": "GitHub profile",
+        "contact.linkedin": "LinkedIn profile",
+        "contact.location": "Darmstadt, Germany"
+      }
+    };
+
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const langButtons = document.querySelectorAll('.lang-button');
+    const translatableElements = document.querySelectorAll('[data-i18n]');
+
+    function setLanguage(language) {
+      document.documentElement.lang = language;
+      document.title = language === 'de'
+        ? 'Khush Makhija | Lebenslauf & Portfolio'
+        : 'Khush Makhija | CV & Portfolio';
+
+      translatableElements.forEach((element) => {
+        const key = element.dataset.i18n;
+        element.textContent = translations[language][key];
+      });
+
+      langButtons.forEach((button) => {
+        const isActive = button.dataset.lang === language;
+        button.classList.toggle('is-active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+      });
+    }
 
     navToggle.addEventListener('click', () => {
       const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
@@ -298,6 +484,12 @@
         navLinks.classList.remove('is-open');
       });
     });
+
+    langButtons.forEach((button) => {
+      button.addEventListener('click', () => setLanguage(button.dataset.lang));
+    });
+
+    setLanguage('en');
   </script>
 </body>
 </html>
