@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khush Makhija - Computer Science student at TU Darmstadt. CV and portfolio for software engineering, full-stack, mobile, and automation roles.">
-  <title>Khush Makhija | CV & Portfolio</title>
+  <meta name="description" content="Khush Makhija - Informatikstudent an der TU Darmstadt. Lebenslauf und Portfolio für Werkstudentenstellen, Praktika und Software-Engineering-Rollen.">
+  <title>Khush Makhija | Lebenslauf & Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,9 +26,9 @@
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
       <div class="language-switch" aria-label="Choose language">
-        <button class="lang-button" type="button" data-lang="de" aria-pressed="false">DE</button>
+        <button class="lang-button is-active" type="button" data-lang="de" aria-pressed="true">DE</button>
         <span aria-hidden="true">|</span>
-        <button class="lang-button is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </nav>
   </header>
@@ -160,19 +160,82 @@
           <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
           <h2 data-i18n="projects.title">Selected Technical Work</h2>
         </div>
-        <div class="project-grid">
-          <article class="card project-card">
-            <p class="card-meta" data-i18n="projects.swissDate">Since May 2026</p>
-            <h3>Swiss Trip Planner App</h3>
-            <ul>
-              <li data-i18n="projects.swiss1">Mobile travel planning app built with Flutter and Dart</li>
-              <li data-i18n="projects.swiss2">Includes itinerary planning, accommodation details, transport information, saved places, and shared expense tracking</li>
-              <li data-i18n="projects.swiss3">Integrated Firebase, Cloud Firestore, and Firebase Auth for real-time synchronization</li>
-              <li data-i18n="projects.swiss4">Built and deployed on iOS devices using Xcode, Flutter CLI, and Firebase configuration</li>
-            </ul>
-            <p class="tech-stack">Flutter · Dart · Firebase · Cloud Firestore · Xcode</p>
+        <div class="project-list">
+          <article class="card project-card project-feature">
+            <div class="project-body">
+              <div class="project-copy">
+                <p class="card-meta" data-i18n="projects.swissDate">Since May 2026</p>
+                <h3>Swiss Trip Planner App</h3>
+                <p class="project-summary" data-i18n="projects.swissSummary">A personal mobile trip planner for an eight-day Switzerland trip, built around real itinerary data, saved places, transport notes, accommodation details, and shared spending.</p>
+                <ul>
+                  <li data-i18n="projects.swiss1">Mobile travel planning app built with Flutter and Dart</li>
+                  <li data-i18n="projects.swiss2">Includes itinerary planning, accommodation details, transport information, saved places, and shared expense tracking</li>
+                  <li data-i18n="projects.swiss3">Integrated Firebase, Cloud Firestore, and Firebase Auth for real-time synchronization</li>
+                  <li data-i18n="projects.swiss4">Built and deployed on iOS devices using Xcode, Flutter CLI, and Firebase configuration</li>
+                </ul>
+                <p class="tech-stack">Flutter · Dart · Firebase · Cloud Firestore · Xcode</p>
+              </div>
+              <div class="project-gallery phone-gallery" aria-label="Swiss Trip Planner App screenshots">
+                <figure>
+                  <img src="assets/projects/travel-home.png" alt="Swiss Trip home screen with trip recap">
+                  <figcaption data-i18n="projects.swissShot1">Trip dashboard</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/travel-day-detail.png" alt="Swiss Trip itinerary detail screen">
+                  <figcaption data-i18n="projects.swissShot2">Itinerary details</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/travel-expenses.png" alt="Swiss Trip spending tracker screen">
+                  <figcaption data-i18n="projects.swissShot3">Expense tracking</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/travel-expenses-cropped.png" alt="Swiss Trip spending form close-up">
+                  <figcaption data-i18n="projects.swissShot4">Spending form</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/travel-saved-places.png" alt="Swiss Trip saved places screen with map links">
+                  <figcaption data-i18n="projects.swissShot5">Saved places</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/travel-day-detail-simulator.png" alt="Swiss Trip day detail screen in iPhone simulator">
+                  <figcaption data-i18n="projects.swissShot6">Simulator preview</figcaption>
+                </figure>
+              </div>
+            </div>
           </article>
-          <article class="card project-card">
+
+          <article class="card project-card project-feature">
+            <div class="project-body">
+              <div class="project-copy">
+                <p class="card-meta" data-i18n="projects.energyDate">2025</p>
+                <h3 data-i18n="projects.energyTitle">Energy System Planning Tool</h3>
+                <p class="project-summary" data-i18n="projects.energySummary">An interactive planning and simulation tool for energy scenarios, combining map-based network modeling with production, demand, storage, and accessibility-aware visualizations.</p>
+                <ul>
+                  <li data-i18n="projects.energy1">Created scenario workflows for placing energy sources, consumers, batteries, junctions, and network edges on a map</li>
+                  <li data-i18n="projects.energy2">Implemented simulation views with heatmaps, time-series charts, demand coverage, and parameter controls for solar, coal, and battery capacity</li>
+                  <li data-i18n="projects.energy3">Added scenario loading, graph upload, image upload, grid toggling, and custom scenario creation support</li>
+                  <li data-i18n="projects.energy4">Included language controls and color-blindness filters to improve accessibility and usability</li>
+                </ul>
+                <p class="tech-stack" data-i18n="projects.energyStack">Energy systems · Simulation UI · Data visualization · Accessibility</p>
+              </div>
+              <div class="project-gallery desktop-gallery" aria-label="Energy System Planning Tool screenshots">
+                <figure>
+                  <img src="assets/projects/energy-simulation-dashboard.png" alt="Energy simulation dashboard with map, heatmap, and charts">
+                  <figcaption data-i18n="projects.energyShot1">Simulation dashboard</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/energy-accessibility-filter.png" alt="Energy system interface with color-blindness filter menu">
+                  <figcaption data-i18n="projects.energyShot2">Accessibility filters</figcaption>
+                </figure>
+                <figure>
+                  <img src="assets/projects/energy-scenario-creator.png" alt="Energy scenario creator with map editor and bilingual instructions">
+                  <figcaption data-i18n="projects.energyShot3">Scenario creator</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card project-compact">
             <p class="card-meta" data-i18n="projects.voiceDate">Since March 2026</p>
             <h3 data-i18n="projects.voiceTitle">Voice-Controlled Windows Automation Assistant</h3>
             <ul>
@@ -338,10 +401,28 @@
         "projects.kicker": "Projekte",
         "projects.title": "Ausgewählte technische Projekte",
         "projects.swissDate": "Seit Mai 2026",
+        "projects.swissSummary": "Eine mobile Reiseplanungs-App für eine achttägige Schweizreise, aufgebaut mit echten Reisedaten, gespeicherten Orten, Transportnotizen, Unterkunftsdetails und geteilten Ausgaben.",
         "projects.swiss1": "Mobile Reiseplanungs-App mit Flutter und Dart entwickelt",
         "projects.swiss2": "Umfasst Reiseplanung, Unterkunftsdaten, Transportinformationen, gespeicherte Orte und geteilte Ausgaben",
         "projects.swiss3": "Firebase, Cloud Firestore und Firebase Auth für Echtzeit-Synchronisierung integriert",
         "projects.swiss4": "Build und Deployment auf iOS-Geräten mit Xcode, Flutter CLI und Firebase-Konfiguration umgesetzt",
+        "projects.swissShot1": "Trip-Dashboard",
+        "projects.swissShot2": "Tagesdetails",
+        "projects.swissShot3": "Ausgaben-Tracking",
+        "projects.swissShot4": "Ausgabenformular",
+        "projects.swissShot5": "Gespeicherte Orte",
+        "projects.swissShot6": "Simulator-Vorschau",
+        "projects.energyDate": "2025",
+        "projects.energyTitle": "Energy System Planning Tool",
+        "projects.energySummary": "Ein interaktives Planungs- und Simulationstool für Energieszenarien, das kartenbasierte Netzmodellierung mit Produktion, Nachfrage, Speicher und barrierearmen Visualisierungen verbindet.",
+        "projects.energy1": "Szenario-Workflows zum Platzieren von Energiequellen, Verbrauchern, Batterien, Knotenpunkten und Netzwerkkanten auf einer Karte erstellt",
+        "projects.energy2": "Simulationsansichten mit Heatmaps, Zeitreihendiagrammen, Nachfrageabdeckung und Parametersteuerung für Solar-, Kohle- und Batteriekapazitäten umgesetzt",
+        "projects.energy3": "Laden von Szenarien, Graph-Upload, Bild-Upload, Grid-Umschaltung und Erstellung eigener Szenarien integriert",
+        "projects.energy4": "Sprachsteuerung und Farbenblindheitsfilter ergänzt, um Zugänglichkeit und Nutzbarkeit zu verbessern",
+        "projects.energyStack": "Energiesysteme · Simulations-UI · Datenvisualisierung · Accessibility",
+        "projects.energyShot1": "Simulations-Dashboard",
+        "projects.energyShot2": "Accessibility-Filter",
+        "projects.energyShot3": "Szenario-Ersteller",
         "projects.voiceDate": "Seit März 2026",
         "projects.voiceTitle": "Sprachgesteuerter Windows-Automatisierungsassistent",
         "projects.voice1": "Modularer Offline-Sprachassistent als Prototyp für Windows 11",
@@ -417,10 +498,28 @@
         "projects.kicker": "Projects",
         "projects.title": "Selected Technical Work",
         "projects.swissDate": "Since May 2026",
+        "projects.swissSummary": "A personal mobile trip planner for an eight-day Switzerland trip, built around real itinerary data, saved places, transport notes, accommodation details, and shared spending.",
         "projects.swiss1": "Mobile travel planning app built with Flutter and Dart",
         "projects.swiss2": "Includes itinerary planning, accommodation details, transport information, saved places, and shared expense tracking",
         "projects.swiss3": "Integrated Firebase, Cloud Firestore, and Firebase Auth for real-time synchronization",
         "projects.swiss4": "Built and deployed on iOS devices using Xcode, Flutter CLI, and Firebase configuration",
+        "projects.swissShot1": "Trip dashboard",
+        "projects.swissShot2": "Itinerary details",
+        "projects.swissShot3": "Expense tracking",
+        "projects.swissShot4": "Spending form",
+        "projects.swissShot5": "Saved places",
+        "projects.swissShot6": "Simulator preview",
+        "projects.energyDate": "2025",
+        "projects.energyTitle": "Energy System Planning Tool",
+        "projects.energySummary": "An interactive planning and simulation tool for energy scenarios, combining map-based network modeling with production, demand, storage, and accessibility-aware visualizations.",
+        "projects.energy1": "Created scenario workflows for placing energy sources, consumers, batteries, junctions, and network edges on a map",
+        "projects.energy2": "Implemented simulation views with heatmaps, time-series charts, demand coverage, and parameter controls for solar, coal, and battery capacity",
+        "projects.energy3": "Added scenario loading, graph upload, image upload, grid toggling, and custom scenario creation support",
+        "projects.energy4": "Included language controls and color-blindness filters to improve accessibility and usability",
+        "projects.energyStack": "Energy systems · Simulation UI · Data visualization · Accessibility",
+        "projects.energyShot1": "Simulation dashboard",
+        "projects.energyShot2": "Accessibility filters",
+        "projects.energyShot3": "Scenario creator",
         "projects.voiceDate": "Since March 2026",
         "projects.voiceTitle": "Voice-Controlled Windows Automation Assistant",
         "projects.voice1": "Modular offline voice assistant prototype for Windows 11",
@@ -489,7 +588,7 @@
       button.addEventListener('click', () => setLanguage(button.dataset.lang));
     });
 
-    setLanguage('en');
+    setLanguage('de');
   </script>
 </body>
 </html>
